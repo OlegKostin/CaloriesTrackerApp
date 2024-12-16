@@ -6,14 +6,14 @@ plugins {
 
 android {
     namespace = "com.olegkos.caloriestrackerapp"
-    compileSdk = 35
+    compileSdk = ProjectConfig.compileSdk
 
     defaultConfig {
-        applicationId = "com.olegkos.caloriestrackerapp"
-        minSdk = 26
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = ProjectConfig.appId
+        minSdk = ProjectConfig.minSdk
+        targetSdk = ProjectConfig.targetSdk
+        versionCode = ProjectConfig.versionCode
+        versionName = ProjectConfig.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
