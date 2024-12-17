@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.olegkos.caloriestrackerapp.ui.theme.CaloriesTrackerAppTheme
+import com.olegkos.core.Screen
+import com.olegkos.onboarding_presentation.welcome.WelcomeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +21,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CaloriesTrackerAppTheme {
-
+WelcomeScreen({Screen.ACTIVITY})
             }
         }
     }

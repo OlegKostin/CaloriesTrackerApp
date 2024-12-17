@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
 }
 
 android {
@@ -52,6 +53,7 @@ dependencies {
 
     implementation(project(Modules.onboardingDomain))
     implementation(project(Modules.core))
+    implementation(project(Modules.coreUi))
 
 
 }
